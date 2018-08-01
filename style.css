@@ -11,9 +11,9 @@ body{
 header{
     background-color: rgba(250, 126, 43, 0.527);
     border: 1px black solid;
-    border-radius: 50px;
-    padding: 10px;
-    width: 40vw;
+    border-radius: 90px;
+    padding: 5px;
+    width: 80vw;
     height: auto;
     margin-top: 10px;
     position: absolute;
@@ -24,7 +24,7 @@ header{
 h1{
     width: 100%;
     margin: 0;
-    font-size: 35pt;
+    font-size: 7vw;
     font-family: 'Pacifico', cursive;
     text-shadow: 3px 3px black;
     color: rgb(53, 57, 255);
@@ -35,16 +35,17 @@ div{
     height: auto;
     background-color: antiquewhite;
     border-radius: 10px;
-    margin: 50px;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 15pt;
+    font-size: 30pt;
     padding: 20px;
 }
 
 div h2{
     margin: 0;
+    font-size: 20pt;
 }
 
 section{
@@ -53,13 +54,13 @@ section{
     background-color: rgb(165, 77, 42);
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     height: 125px;
     margin: 0;
 }
 
-button{
+#rodar{
     width: 75px;
     height: 75px;
     border: solid black 2px;
@@ -70,7 +71,55 @@ button{
     background-color: red;
     box-shadow: 0 15px black;
     transform: translateY(0);
+    outline: none;
     transition: linear 1s;
+    z-index: 3;
+}
+
+aside{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    right: 20px;
+    flex-direction: row;
+}
+
+/* #modal{
+    width: auto;
+    margin: 0;
+    height: auto;
+    display: flex;
+    padding: 0;
+    background-color: rgba(165, 77, 42, 0);
+    border-radius: 100px 0 0 100px;
+    overflow: hidden;
+} */
+
+#valorFiltro{
+    height: 45px;
+    width: 190px;
+    border-radius: 100px 0 0 100px;
+    margin: 0;
+    padding: 0 0 0 12px;
+    transform: translateX(123px) scaleX(0.01);
+    transition: 0.1s linear;
+    font-size: 15pt;
+    outline: none;
+}
+
+#filtro{
+    width: 50px;
+    height: 50px;
+    border: solid black 2px;
+    border-radius: 100px;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+    background-color: blueviolet;
+    font-size: 19pt;
+    z-index: 2;
 }
 
 .vaievolta{
